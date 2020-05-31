@@ -1,3 +1,6 @@
+// Auto Key Cipher in C++
+// Link to the Article: https://iq.opengenus.org/auto-key-cipher/
+
 #include <iostream>
 
 std::string autokeycipher(std::string text, char key, int encrypt)
@@ -48,7 +51,7 @@ int main(int argc, char **argv)
     std::cout << std::endl
               << "The Plain Text is: " << plaintext;
 
-    /* 3rd argument decides whither to do 1-Encryption or 0-Decryption. */
+    // 3rd argument decides whither to do 1-Encryption or 0-Decryption.
     std::string ciphertext = autokeycipher(plaintext, key, 1);
     std::cout << std::endl
               << "The Text after Encryption(Cipher text) is: " << ciphertext;
